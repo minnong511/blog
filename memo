@@ -1,0 +1,24 @@
+#__init__ 은 파이썬의 기본 패키지에 해당한다 .
+# __init__.py 를 이용하면 패키지로 생성할 수 있음
+ex)
+ sound/
+
+        __init__.py
+        formats/
+                __init__.py
+                wavread.py
+
+
+ ex) 파일을 불러오는 방법
+ sol1)
+
+ import sound.formats.wavread
+
+ sol2)
+
+ from sound.formats import echo
+
+새로운 궁금증 git은 어떻게 사용하냐?
+gitignore 이거 파일 어캐 만드냐...?
+
+# git 파일 그냥 지우면 초기화된다.
