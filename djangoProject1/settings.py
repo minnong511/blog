@@ -27,7 +27,7 @@ SECRET_KEY = 'n3(3^li)*=b_(&5d)vswlj$=96fc9_=ie4!8$)u=15*j)+eljv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
 
 
 # Application definition

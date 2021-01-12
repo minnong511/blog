@@ -4,7 +4,7 @@ from django.utils import timezone
 
 # 모델을 만들면 항상 DB에 저장할 수 있도록
 # python manage.py makemigrations 파일명
-# python manage.py migrate 파일명
+# python manage.py migrate 파일명$  pip install django~=3.1.5
 
 
 # 클래스 Post 내부의 models.Model 은 포스트가 장고 모델임을 의미한다. , 포스트가 DB에 저장된다는 걸
