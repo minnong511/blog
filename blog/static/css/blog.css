@@ -1,0 +1,8 @@
+/* h1 a 는 css 셀렉터 , h1 안  a요소를 넣어 스타일 적유할 수 있음     */
+h1 a {
+    color: #FCA205;
+}
+
+body {
+    padding-left: 15px ;
+}
