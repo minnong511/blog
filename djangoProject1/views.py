@@ -21,10 +21,9 @@ from django.shortcuts import render
 
 # 페이지 만들 때마다 바뀌는 것이 다이나믹
 
-def index(request):
+
     # 계산이나, 데이터베이스 조회 ,수정 , 등록
     # 응답 메시지를 만들어서 반환
-    return HttpResponse('아 저녁 뭐먹지')
 
 # 문제 1
 # 뷰의 이름은 : welcome -> 뷰의 이름은 곧 함수이름이 된다
