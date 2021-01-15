@@ -6,6 +6,9 @@ from django.utils import timezone
 # python manage.py makemigrations 파일명
 # python manage.py migrate 파일명$  pip install django~=3.1.5
 
+# OOP 객체지향프로그래밍 , 모델을 제작해서 모델을 정의하여 알아서 상호작용하도록 만든다
+
+# 객체속성 , 행위는 메서드로 구현된다
 
 # 클래스 Post 내부의 models.Model 은 포스트가 장고 모델임을 의미한다. , 포스트가 DB에 저장된다는 걸
 # 알 수 있게 만든다
