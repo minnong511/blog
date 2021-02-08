@@ -1,0 +1,99 @@
+/*  태그를 먼저 설정한 것 색 적용된다  */
+
+/* css 태그에서 공백이 존재하면 설정 적용이 안되는 경우가 존재한다 */
+
+/*
+만약 html 태그가 걸려있을 떄 <h1 id = "d" > 안녕 </h1> 라 걸려있을 떄
+cs 선택자
+#k {
+ color : blue;  --> 여기사 세미콜론 잘 입력해라 ㅋㅋ 실수하면 적용이 안된다
+}
+<div class= "red"> </div>
+<div class> </div>
+<div>는 지정하는 만큼 보여준다 */
+:root{
+    --text-color: white;
+    --background-color: #3f3939;
+    --accent-color: pink;
+}
+/*한번에 서술함으로써 한번에 테스트가 가능하다*/
+body {
+    margin: 0;
+    font-family: "MS PGothic";
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* a태그에 걸린 글자를 전부 하얀색으로 만든다 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+}
+.navbar_logo{
+    font-size: 24px;
+    color: white;
+}
+.navbar_logo i {
+    color: orange;
+}
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+/* 메뉴에 있는 글씨 간격주기  */
+.navbar_menu li{
+    padding: 8px 12px;
+}
+.navbar_menu li:hover{
+    background-color: orange;
+    border-radius:4px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+.navbar_icons li {
+    padding: 8px 12px;
+}
+.navbar_toggleBtn{
+        display: none;
+        position: absolute;
+        right: 20px;
+        font-size: 24px;
+        color: black;
+    }
+/* 모바일 창 설정 ㅋㅋㅋ  */
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding:8px 24px;
+    }
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_icons{
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+    .navbar_toggleBtn{
+      display: block ;
+    }
+    .navbar_menu.active ,
+    .navbar_icons.active {
+        display: flex;
+    }
+}

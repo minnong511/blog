@@ -43,3 +43,4 @@ gitignore 이거 파일 어캐 만드냐...?
 -- 전달받은 모델의 객체 목록 .
 즉 데이터베이스로부터 데이터를 읽고 필터를 걸거나 정렬할 수 있다
 
+git에서 오류가 날 경우 git init , git remote add origin 링크 입력

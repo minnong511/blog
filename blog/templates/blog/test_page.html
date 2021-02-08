@@ -1,65 +1,45 @@
 <html>
     <head>
         <meta charset = "utf-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- 한글로 인코딩할때 필요한 문자 , head 안에 넣어놓으면 된다 -->
         <title> 이민형 cSS 연습장 </title>
-        <!-- sytle 과 관련된 파일을 전부 style.css에 넣으라는 말이다  -->
-        <link href="style.css"
-              rel= "stylesheet "
-              type="text/css"  />
+        <link rel= "stylesheet" type="text/css" href= "style.css" >
         <meta name = "description " content="이민형 연습장">
         <!-- 이거 카톡에서 홈페이지 소개 뜰때 나오는 그 링크임 ㅋㅋ , 그게 메타태그  -->
+        <script src="main.js" defer></script>
+        <script src="https://kit.fontawesome.com/227bd07be7.js" crossorigin="anonymous"></script>
     </head>
     <!-- 본문 시작  -->
-    <body>
-        <h1>안녕</h1>
-        <h2>안녕</h2>
-        <h3>안녕</h3>
-        <h4>안녕</h4>
-        <h5>안녕</h5>
-        <h6>안녕</h6>
         <!-- 이거 이미지 집어넣는 키임  , 만약 비디오를 집어넣고 싶다면 video src = "" -->
-
-        <p>  </p>
-
-        <table border="1">
-        <thead>
-            <tr>
-                <th>이름</th>
-                <th>나이</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>민형</td>
-                <td>23살</td>
-            </tr>
-            <tr>
-                <td>민형</td>
-                <td>25살</td>
-            </tr>
-        </tbody>
-
-            <div class = "top"> 상단 </div>
-            <div class = "mid"> 중단 </div>
-            <div class = "bot"> 하단 </div>
             <!-- div는 한 줄 전체의 공간을 차지하게 된다  -->
             <!-- span은 자신이 차지하고 있는 공간만큼을 색칠하게 된다-->
-        <input type= "text">
-        <input type= "checkbox ">
-        <input type= "radio">
-        <input type= "color">
-            <textarea> </textarea>
-        <select name= " name ">
-            <option value= "민형"> 아나 </option>
-            <option value= "나나"> 나나 </option>
-        </select>
-        <form>
-            <input type = "email" placeholder= " 이메일 " />
-            <input type = "password " placeholder= " 비밀번호 "/>
             <!-- placeholder 자리에 저걸 배치하면 흐릿한 글씨가  뜨게 된다 -->
-            <button type = "submit"> 로그인 </button>
-        </form>
+    <!-- div는 레이아웃을 만들때 사용한다  -->
+    <body>
+        <nav class="navbar">
+            <div class="navbar_logo">
+                <i class="fas fa-address-card"></i>
+                <a href=""> 감성콘 </a>
+            </div>
+            <!-- ul: unorder list , 순서없는 리스트 작성시에 사용 -->
+            <ul class="navbar_menu">
+                <li><a href="">연구실 소개</a></li>
+                <li><a href="">교수</a></li>
+                <li><a href="">알럼나이</a></li>
+                <li><a href="">연구생</a></li>
+                <li><a href="">사진첩</a></li>
+            </ul>
+            <ul class="navbar_icons">
+                <li><i class="fab fa-twitch"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+
+            </ul>
+            <a href="#" class="navbar_toggleBtn">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
     </body>
 </html>
